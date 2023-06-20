@@ -6,6 +6,13 @@
     <title><?='Leetcode'?></title>
 </head>
 <body>
-    
+    <?php
+    class Solution {
+        static function isPalindrome($x) {
+            return strrev(strval($x))==strval($x);
+        }
+    }
+    echo Solution::isPalindrome(121)
+    ?>
 </body>
 </html>
