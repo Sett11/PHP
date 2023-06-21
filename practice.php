@@ -7,12 +7,7 @@
 </head>
 <body>
     <?php
-    $a=5;
-    if(isset($a)){
-        echo 'true';
-    } else{
-        echo 'false';
-    }
+    echo gettype(1);
     ?>
 </body>
 </html>
