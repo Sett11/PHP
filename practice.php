@@ -7,7 +7,14 @@
 </head>
 <body>
     <?php
-    echo gettype(1);
+    $a=array(1,2,3,'4','5','6',7,null,true);
+    foreach($a as $e) {
+        if (is_numeric($e)){
+            echo var_export($e, true) . " - number", PHP_EOL . "<br>";
+        } else {
+            echo var_export($e, true) . " - not number",PHP_EOL . "<br>";
+        }
+    }
     ?>
 </body>
 </html>
